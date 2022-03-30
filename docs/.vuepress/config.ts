@@ -1,10 +1,5 @@
-/*
- * @Author: HADES
- * @Date: 2022-03-29
- * @LastEditTime: 2022-03-29
- * @Description:
- */
 import { defineUserConfig } from "vuepress";
+const { path } = require("@vuepress/utils");
 import sidebar from "./config/sidebar";
 import type { DefaultThemeOptions } from "vuepress";
 import navbar from "./config/navbar";
@@ -17,7 +12,8 @@ export default defineUserConfig<DefaultThemeOptions>({
     "Expensive has never been its weakness, poor has always been your weakness.",
 
   // 主题和它的配置
-  theme: "@vuepress/theme-default",
+  //theme: "@vuepress/theme-default",
+
   themeConfig: {
     sidebar,
     logo: "https://vuejs.org/images/logo.png",

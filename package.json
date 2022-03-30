@@ -22,5 +22,8 @@
   "homepage": "https://github.com/HDAES/Hades-VuePress#readme",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.36"
+  },
+  "dependencies": {
+    "vuepress-plugin-reading-time2": "^2.0.0-beta.24"
   }
 }

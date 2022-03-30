@@ -22,11 +22,13 @@ export function getSidebar(dirPath?: string): SidebarItem[] {
       if (String(item).endsWith(".md")) {
         return {
           text: item.split(".")[0],
+
           link: resolve(path, item),
         };
       } else {
         return {
           text: item.split(".")[0],
+          collapsible: true,
           children: getSidebar(resolve(path, item)),
         };
       }
